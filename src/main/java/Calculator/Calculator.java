@@ -7,7 +7,7 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Calculator {
-    private static final Logger logger = LogManager.getLogger(Calculator.class);
+//    private static final Logger logger = LogManager.getLogger(Calculator.class);
 
     public Calculator() {
     }
@@ -61,7 +61,7 @@ public class Calculator {
                     System.out.print("Enter the power : ");
                     number2 = scanner.nextDouble();
                 } catch (InputMismatchException error) {
-                    logger.error("Invalid input, Entered input is not a number");
+                    System.out.print("Invalid input, Entered input is not a number");
                     return;
                 }
             } else if( choice == 1|| choice == 2|| choice ==3){
@@ -69,7 +69,7 @@ public class Calculator {
                     System.out.print("Enter the number : ");
                     number1 = scanner.nextDouble();
                 } catch (InputMismatchException error) {
-                    logger.error("Invalid input, Entered input is not a number");
+                    System.out.print("Invalid input, Entered input is not a number");
                     return;
                 }
             } else {
